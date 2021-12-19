@@ -1,0 +1,151 @@
+.WhiteBox {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 4px 6px 3px #bbbbbb;
+    margin-bottom: 50px;
+    width: 500px;
+}
+
+#test .whiteboxTitles {
+    color: #94D2B9;
+}
+
+input[type="checkbox"] {
+    border-radius: 100%;
+}
+
+.WhiteBox2 {
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 4px 6px 3px #bbbb;
+    margin-bottom: 50px;
+    width: 500px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type=checkbox] {
+    transform: scale(2);
+}
+
+input[type=checkbox]:checked {
+    background: #00bf00;
+}
+
+#uitdaging {
+    display: inline-block;
+}
+
+#mainFlexBox {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 50px;
+}
+
+#textFlexBox {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    width: 50%;
+    gap: 35px;
+}
+
+.textBox {
+    padding: 20px;
+    margin: 0;
+}
+
+.videoBox {
+    padding: 0;
+    height: 100%;
+}
+
+.whiteboxTitles {
+    margin: 0;
+    font-size: 16pt;
+}
+
+.iconFlexbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iconsFlexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.tutorialFlexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+#titelMetKopieer {
+    display: flex;
+    justify-content: space-between;
+}
+
+#titelMetKopieer button {
+    cursor: pointer;
+}
+
+iframe {
+    border-radius: 10px;
+    border: none;
+}
+
+#tutorialTitle {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#Tutorial {
+    padding-bottom: 40px;
+}
+
+#PageTitle {
+    text-align: center;
+}
+
+#line {
+    width: 220px;
+}
+
+#kopieerBtn {
+    text-decoration: none;
+    border: lightgray 0.5px solid;
+    background-color: white;
+
+    border-radius: 5px;
+    box-shadow: lightgray 3px 3px 3px;
+}
+
+#kopieerBtn:hover {
+
+    background-color: rgb(240, 240, 240);
+}
+
+#back {
+    cursor: pointer;
+}
+
+#uitdagingenImg {
+    justify-self: end;
+    width: 60%;
+}

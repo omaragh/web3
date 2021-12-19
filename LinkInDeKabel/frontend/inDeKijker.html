@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="inDeKijker.css">
+    <script type="Module" src="./inDeKijker.js"></script>
+    <script type="Module" src="./logout.js"></script>
+    <title>Podium | Link in de Kabel</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div id="mainHeaderFlexbox">
+                <ul id="navItems">
+                    <li><a class="nav-item Uitdagingen icons" href="uitdagingen.html">Uitdagingen</a></li>
+                    <li><a class="nav-item Score icons" href="score.html">Score</a></li>
+                    <li><a class="current-nav-item Kijker icons" href="#">Podium</a></li>
+                    <li><a id="logout" class="nav-item LogUit icons" href="">Log uit</a></li>
+                </ul>
+                <div id="scoreWeergave"></div>
+                <img id="logo" src="resources/LogoLinkInDeKabel.png" alt="Link in de Kabel logo">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div id="popUp">
+            <div id="popUpContent">
+
+                <h3 id="close">&#10005;</h3>
+
+                <!-- Slideshow container -->
+                <div id="slideShow" class="slideshow-container"></div>
+                <br>
+
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+
+            </div>
+        </div>
+
+        <h2 class="pageTitle">Podium</h2>
+        <div id="line"></div>
+
+        <div id="werkenWrapper">
+
+            <div class="werk" id="werk1">
+                <div class="top bar" id="werk1Bar"></div>
+                <div class="bottom bar" id="werk1Bar"></div>
+                <img id="img1" src="resources/InDeKijkeresources/powerPoint.jpeg" alt="Power Point">
+                <p>Week 1: Power Point</p>
+            </div>
+
+            <div class="werk" id="werk2">
+                <div class="top bar" id="werk2Bar"></div>
+                <div class="bottom bar" id="werk2Bar"></div>
+                <img id="img2" src="resources/InDeKijkeresources/wordDocu.jpeg" alt="Word Document">
+                <p>Week 2: Word Uitdaging</p>
+            </div>
+
+            <div class="werk" id="werk3">
+                <div class="top bar" id="werk3Bar"></div>
+                <div class="bottom bar" id="werk3Bar"></div>
+                <img id="img3" src="resources/InDeKijkeresources/videoEdit.jpeg" alt="Video edit software">
+                <p>Week 3: Video Uitdaging</p>
+            </div>
+
+            <div class="werk" id="werk4">
+                <div class="top bar" id="werk4Bar"></div>
+                <div class="bottom bar" id="werk4Bar"></div>
+                <img id="img4" src="resources/InDeKijkeresources/foto.webp" alt="Mooie foto">
+                <p>Week 4: Foto Uitdaging</p>
+            </div>
+
+            <div class="werk" id="werk5">
+                <div class="top bar" id="werk5Bar"></div>
+                <div class="bottom bar" id="werk5Bar"></div>
+                <img id="img5" src="resources/InDeKijkeresources/foto2.jpeg" alt="Mooie foto 2">
+                <p>Week 4: Foto Uitdaging 2</p>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+<script>
+    // THIS CODE COMES FROM W3SCHOOLS
+    // https://www.w3schools.com/howto/howto_js_slideshow.asp
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
+
+</html>

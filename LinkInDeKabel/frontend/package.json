@@ -1,0 +1,23 @@
+{
+  "name": "linkindekabel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YannisVS/LinkInDeKabel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YannisVS/LinkInDeKabel/issues"
+  },
+  "homepage": "https://github.com/YannisVS/LinkInDeKabel#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http-server": "^14.0.0"
+  }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="registratie.css">
+    <script type="Module" src="./registreer.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registratie | Lin in de Kabel</title>
+</head>
+
+<body>
+    <div id="overlay" class="loading-overlay"></div>
+    <div id="imageContainer" class="loading-overlay-image-container">
+        <img src="resources/loading.gif" class="loading-overlay-img" />
+        <h4 id="loadText" style="color: white;">Account wordt gemaakt</h4>
+    </div>
+
+    <main>
+        <img id="Logo" src="resources/LogoLinkInDeKabel.png">
+
+        <div id="MainContainer">
+            <div id="Aanmelden">
+                <h2>Account maken</h2>
+                <form class="form" method="get">
+                    <input type="text" id="Voornaam" name="Voornaam"><br><br>
+                    <label class="Voornaam_lbl" for="Voornaam">Voornaam:</label>
+                    <input type="text" id="Achternaam" name="Achternaam"><br><br>
+                    <label class="Achternaam_lbl" for="Achternaam">Achternaam:</label>
+                    <input type="email" id="Mailadress" name="Mailadress"><br><br>
+                    <label class="Mailadress_lbl" for="Mailadress">E-mail:</label>
+                    <input type="password" id="Wachtwoord" name="Wachtwoord"><br><br>
+                    <label class="Wachtwoord_lbl" for="Wachtwoord">Wachtwoord:</label>
+
+                    <select class="Dropdown" name="School" id="School">
+                        <option value="NONE">Kies jouw school</option>
+                        <option value="SMI">SMI</option>
+                    </select><br><br>
+                    <label class="School_lbl" for="School">School:</label>
+
+                    <select class="Dropdown" name="Klas" id="Klas">
+                        <option value="NONE">Kies jouw klas</option>
+                        <option value="Okan Robijn">Okan Robijn</option>
+                        <option value="Okan Goud">Okan Goud</option>
+                    </select><br><br>
+                    <label class="Klas_lbl" for="Klas">Klas:</label>
+                    <p id="error">Alle velden moeten ingevuld worden</p>
+                    <p id="AlreadyHaceAccount">heb je al een account? <a href="login.html" id="Login_txtbtn">Log in</a>
+                    </p>
+                    <div id="aanmeldButtons">
+                        <input class="FormButton" id="MaakAccount_input" type="submit" value="Maak account">
+                    </div>
+                </form>
+            </div>
+            <div id="Image2"></div>
+        </div>
+
+    </main>
+</body>
+
+</html>

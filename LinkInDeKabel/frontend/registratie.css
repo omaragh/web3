@@ -1,0 +1,45 @@
+#Aanmelden {
+    margin-top: -50px;
+
+    transform: scale(0.80);
+}
+
+#MainContainer{
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#MaakAccount_input {
+    background-color: #CA6CC4;
+    text-decoration: none;
+    text-align: center;
+}
+
+.School_lbl{
+    left: 20px;
+    top: -75px;
+}
+
+.Klas_lbl{
+    left: 20px;
+    top: -75px;
+}
+
+#Image2 {
+    background-image: url(resources/tekening_home.png);
+    width: 100%;
+    margin: 5%;
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    z-index: -1;
+}
+#AlreadyHaceAccount {
+    margin-top: 0;
+    font-size: 14pt;
+}

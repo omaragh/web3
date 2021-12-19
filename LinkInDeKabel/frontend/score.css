@@ -1,0 +1,78 @@
+.parent h2 {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    width: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #13C6DC;
+    padding: 10px;
+}
+
+#categ {
+    color: black;
+}
+
+
+.parent {
+    margin-left: 12.5em;
+    margin-top: 2em;
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 800px;
+    background-color: white;
+
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 2;
+    margin-top: 2em;
+    height: fit-content;
+}
+
+.div3 {
+    grid-area: 1 / 3 / 2 / 4;
+    margin-top: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div4 {
+    grid-area: 1 / 4 / 2 / 5;
+    height: fit-content;
+    margin-top: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div5 {
+    grid-area: 2 / 4 / 1 / 5;
+    margin-top: 10em;
+}
+
+.div6 {
+    grid-area: 1 / 5 / 2 / 6;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    font-weight: bolder;
+    font-family: TypoRound;
+    margin-top: 150px;
+    font-size: 20pt;
+}
+
+.div7 {
+    grid-area: 1 / 1 / 3 / 2;
+    margin-top: 6em;
+    margin-left: 6em;
+    position: absolute;
+}

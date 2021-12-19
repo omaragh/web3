@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="general.css">
+    <script type="Module" src="./login.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Link in de Kabel</title>
+</head>
+
+<body>
+    <div id="overlay" class="loading-overlay"></div>
+    <div id="imageContainer" class="loading-overlay-image-container">
+        <img src="resources/loading.gif" class="loading-overlay-img" />
+        <h4 id="loadText" style="color: white;">Je wordt ingelogd</h4>
+    </div>
+
+    <main>
+        <img id="Logo" src="resources/LogoLinkInDeKabel.png">
+        <div>
+
+            <div id="Title">
+                <h1>Link In De Kabel</h1>
+            </div>
+
+            <div id="formAndImage">
+                <div id="Aanmelden">
+                    <h2>Aanmelden</h2>
+                    <form class="form" method="get">
+                        <input type="email" id="Mailadress" name="Mailadress"><br><br>
+                        <label class="Mailadress_lbl" for="Mailadress">E-mail:</label>
+                        <input type="password" id="Wachtwoord" name="Wachtwoord"><br><br>
+                        <label class="Wachtwoord_lbl" for="Wachtwoord">Wachtwoord:</label>
+                        <div id="aanmeldButtons">
+                            <input class="FormButton" id="LogIn_btn" type="submit" value="Log in">
+                            <a id="MaakAccount_btn" class="FormButton" href="registratie.html">Maak account</a>
+                        </div>
+                    </form>
+                    <p id="error">Alle velden moeten ingevuld worden</p>
+                </div>
+
+                <div id="Image"></div>
+            </div>
+
+        </div>
+    </main>
+</body>
+
+</html>

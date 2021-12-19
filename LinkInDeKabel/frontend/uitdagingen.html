@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="uitdagingen.css">
+    <script type="Module" src="./uitdagingen.js"></script>
+    <script type="Module" src="./logout.js"></script>
+    <title>Uitdagingen | Lin in de Kabel</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="mainHeaderFlexbox">
+                <ul id="navItems">
+                    <li><a class="current-nav-item Uitdagingen icons" href="#">Uitdagingen</a></li>
+                    <li><a class="nav-item Score icons" href="score.html">Score</a></li>
+                    <li><a class="nav-item Kijker icons" href="inDeKijker.html">Podium</a></li>
+                    <li><a id="logout" class="nav-item LogUit icons" href="">Log uit</a></li>
+                </ul>
+                <div id="scoreWeergave"></div>
+                <img id="logo" src="resources/LogoLinkInDeKabel.png" alt="Link in de Kabel logo">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="pageTitle">Alle uitdagingen</h2>
+        <div id="line"></div>
+
+        <div id="uitdagingen">
+            <a href="bonus.html">
+                <div class="uitdaging">
+                    <h4 class="uitdagingTitel">Bonus uitdagingen</h4>
+                    <p>Extra uitdagingen</p>
+                    <img src="resources/pinpoint.png" alt="Bonus uitdaging">
+                </div>
+            </a>
+
+
+            <div id="weekChallenge" class="uitdaging">
+                <h4 id="title" class="mainUitdagingTitel"></h4>
+                <p id="desc"></p>
+                <img style="border-radius: 20px;" id="pic" src="" alt="Week uitdaging">
+            </div>
+
+            <a href="#">
+                <div id="locked" class="uitdaging">
+                    <h4 class="uitdagingTitel">Video uitdaging</h4>
+                    <img src="resources/lock.png" alt="Volgende uitdaging">
+                    <p>Vergrendeld</p>
+                </div>
+            </a>
+
+        </div>
+    </main>
+</body>
+
+</html>

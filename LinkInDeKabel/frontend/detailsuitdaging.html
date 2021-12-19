@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="detailsuitdaging.css">
+    <script type="Module" src="./detail.js"></script>
+    <script type="Module" src="./logout.js"></script>
+    <title>detailsuitdaging (word vervangen door javascript onderwerp van databank)</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="mainHeaderFlexbox">
+                <ul id="navItems">
+                    <li><a class="current-nav-item Uitdagingen icons" href="uitdagingen.html">Uitdagingen</a></li>
+                    <li><a class="nav-item Score icons" href="score.html">Score</a></li>
+                    <li><a class="nav-item Kijker icons" href="inDeKijker.html">Podium</a></li>
+                    <li><a id="logout" class="nav-item LogUit icons" href="">Log uit</a></li>
+                </ul>
+                <div id="scoreWeergave"></div>
+                <img id="logo" src="resources/LogoLinkInDeKabel.png" alt="Link in de Kabel logo">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h3 id="back">&#8617;Terug</h3>
+
+        <h2 class="pageTitle"></h2>
+        <div id="line"></div>
+
+        <div id="mainFlexBox">
+
+            <div id="textFlexBox">
+
+                <div id="beschrijving" class="WhiteBox textBox">
+                    <div id="titelMetKopieer">
+                        <h3 class="whiteboxTitles">Beschrijving</h3>
+                        <button id="kopieerBtn" onclick="kopieer()">Kopieer beschrijving</button>
+                    </div>
+                    <p id="beschrijvingText"></p>
+                </div>
+
+                <div id="test" class="WhiteBox2 textBox">
+
+                    <h3 id="uitdaging" class="whiteboxTitles">Uitdaging gemaakt</h3>
+                    <input type="checkbox">
+                </div>
+
+                <div id="Benodigdheden" class="WhiteBox textBox">
+                    <h3 class="whiteboxTitles">Benodigdheden</h3>
+                    <div class="iconsFlexbox">
+
+                    </div>
+                </div>
+
+                <img id="uitdagingenImg" src="./resources/uitdaging.svg" alt="uitdaging afbeelding">
+            </div>
+
+            <div id="Tutorial" class="WhiteBox videoBox">
+                <div id="tutorialTitle">
+                    <img class="tutorialicon" src="resources/Icons/benodigdhedenIcons/Tutorial.svg" width="50px">
+                    <h3 class="whiteboxTitles">Tutorials:</h3>
+                </div>
+                <div class="tutorialFlexbox">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function kopieer() {
+            /* Get the text field */
+            let copyText = document.getElementById("beschrijvingText");
+            let kopieerBtn = document.getElementById("kopieerBtn");
+            let isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
+
+            if (isChrome) {
+                alert("Tekst Kopieren werkt niet in Chrome...");
+            } else {
+                /* Copy the text inside the text field */
+                navigator.clipboard.writeText(copyText.innerText);
+
+                kopieerBtn.innerText = "Beschrijving is gekopieerd!";
+                setTimeout(function () {
+                    kopieerBtn.innerText = "Kopieer beschrijving";
+                }, 2000);
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="123" height="18" viewBox="0 0 123 18">
+  <rect id="Rectangle_234" data-name="Rectangle 234" width="37" height="18" rx="9" fill="#b15cab"/>
+  <rect id="Rectangle_235" data-name="Rectangle 235" width="37" height="18" rx="9" transform="translate(43)" fill="#b15cab"/>
+  <g id="Rectangle_236" data-name="Rectangle 236" transform="translate(86)" fill="#fff" stroke="#000" stroke-width="1">
+    <rect width="37" height="18" rx="9" stroke="none"/>
+    <rect x="0.5" y="0.5" width="36" height="17" rx="8.5" fill="none"/>
+  </g>
+</svg>

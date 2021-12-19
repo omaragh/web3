@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="bonus.css">
+    <script type="Module" src="./bonus.js"></script>
+    <script type="Module" src="./logout.js"></script>
+    <title>Bonus Uitdagingen | Link in de Kabel</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div id="mainHeaderFlexbox">
+                <ul id="navItems">
+                    <li><a class="current-nav-item Uitdagingen icons" href="uitdagingen.html">Uitdagingen</a></li>
+                    <li><a class="nav-item Score icons" href="score.html">Score</a></li>
+                    <li><a class="nav-item Kijker icons" href="inDeKijker.html">Podium</a></li>
+                    <li><a id="logout" class="nav-item LogUit icons" href="">Log uit</a></li>
+                </ul>
+                <div id="scoreWeergave"></div>
+                <img id="logo" src="resources/LogoLinkInDeKabel.png" alt="Link in de Kabel logo">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <a href="uitdagingen.html">
+            <h3 id="back">&#8617;Terug</h3>
+        </a>
+        <h2 class="pageTitle">Bonus Uitdagingen</h2>
+        <div id="line"></div>
+
+        <div id="challengeList">
+
+        </div>
+    </main>
+
+</body>
+
+<script>
+    function redirectToDetails(UitdagingId) {
+        document.cookie = `UitdagingId = ${UitdagingId}`;
+        document.cookie = `UitdagingType = Bonus`;
+
+        window.open("detailsuitdaging.html", "_self");
+    }
+</script>
+
+</html>

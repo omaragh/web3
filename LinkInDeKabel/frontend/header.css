@@ -1,0 +1,87 @@
+.current-nav-item {
+    text-decoration: none;
+    font-family: TypoRound, sans-serif;
+    color: black;
+    filter: invert(77%) sepia(16%) saturate(5746%) hue-rotate(273deg) brightness(85%) contrast(83%);
+
+}
+
+#navItems {
+    text-decoration: none;
+    font-family: TypoRound, sans-serif;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 600px;
+    padding: 0;
+}
+
+#navItems a:hover {
+    filter: invert(77%) sepia(16%) saturate(5746%) hue-rotate(273deg) brightness(85%) contrast(83%);
+    transition: 0.3s ease-in-out;
+}
+
+
+#navItems li {
+    list-style: none;
+    padding-right: 1%;
+}
+
+#navItems li a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.nav-item {
+    color: black;
+}
+
+
+.icons::before {
+    content: "m";
+    color: rgba(0, 0, 0, 0);
+    width: 35px;
+    height: 35px;
+    font-size: 80px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    background-size: contain;
+    margin-bottom: 10px;
+}
+
+.Uitdagingen::before {
+    vertical-align: 23px;
+    background-image: url("resources/Icons/Uitdagingen.svg");
+}
+
+
+.Kijker::before {
+    vertical-align: 23px;
+    background-image: url("resources/Icons/InDeKijker.svg");
+}
+
+.Score::before {
+    vertical-align: 23px;
+    background-image: url("resources/Icons/Score.svg");
+}
+
+.LogUit::before {
+    vertical-align: 23px;
+    background-image: url("resources/Icons/LogUit.svg");
+}
+
+#mainHeaderFlexbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo{
+    padding-right: 30px;
+    margin-top: 1%;
+    width: 180px;
+}

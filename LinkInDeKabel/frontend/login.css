@@ -1,0 +1,204 @@
+#Title {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+#Logo {
+    position: absolute;
+    margin: 0;
+    right: 3vw;
+    top: 4vh;
+    width: 180px;
+}
+
+#formAndImage {
+    display: flex;
+    justify-content: space-between;
+}
+
+#Aanmelden {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    border-radius: 8px;
+    padding: 50px;
+    background-color: white;
+    box-shadow: 0px 4px 6px 3px #bbbbbb;
+}
+
+#Aanmelden h2 {
+    font-size: 30pt;
+}
+
+#aanmeldButtons {
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+}
+
+#Image {
+    background-image: url(resources/tekening_home.png);
+    width: 50vw;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    z-index: -1;
+}
+
+.FormButton {
+    font-size: 16px;
+    width: 165px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+
+    cursor: pointer;
+}
+
+#LogIn_btn {
+    background-color: #86D0D9;
+}
+
+#MaakAccount_btn {
+    background-color: #CA6CC4;
+    text-decoration: none;
+    text-align: center;
+    height: 35px;
+    padding-top: 15px;
+}
+
+#error {
+    display: none;
+    color: rgb(177, 39, 39);
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+select {
+    /* -webkit-appearance:none; */
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 97%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+input:focus {
+    border-color: #86D0D9;
+    outline: none;
+}
+
+#Login_txtbtn {
+    color: turquoise;
+    cursor: pointer;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+#AlreadyHaceAccount {
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Dropdown {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    width: 99%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Dropdown:first-child {
+    color: lightgray;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+select:focus {
+    border-color: #86D0D9;
+    outline: none;
+}
+
+
+#Achternaam:focus~.Achternaam_lbl {
+    top: -80px;
+    left: -5px;
+    background-color: transparent;
+    transition: 0.2s ease-in;
+}
+
+#Voornaam:focus~.Voornaam_lbl {
+    top: -80px;
+    left: -5px;
+    background-color: transparent;
+    transition: 0.2s ease-in;
+}
+
+#Mailadress:focus~.Mailadress_lbl {
+    top: -80px;
+    left: -5px;
+    background-color: transparent;
+    transition: 0.2s ease-in;
+}
+
+#Wachtwoord:focus~.Wachtwoord_lbl {
+    top: -80px;
+    left: -5px;
+    background-color: transparent;
+    transition: 0.2s ease-in;
+}
+
+#School:focus~.School_lbl {
+    top: -90px;
+    left: -5px;
+    background-color: transparent;
+    transition: 0.2s ease-in;
+}
+
+#Klas:focus~.Klas_lbl {
+    top: -90px;
+    left: -5px;
+    background-color: transparent;
+    transition: 0.2s ease-in;
+}
+
+label {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    left: 20px;
+    top: -65px;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: 0.2s ease-in;
+    color: #86D0D9;
+    background-color: white;
+    font-size: 12pt;
+}
+
+#LogIn_btn:hover {
+    background-color: #ACDAE0;
+}
+
+#MaakAccount_btn:hover {
+    background-color: #E0ABDC;
+}
+
+#MaakAccount_input:hover {
+    background-color: #E0ABDC;
+}
