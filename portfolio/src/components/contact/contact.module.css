@@ -1,0 +1,27 @@
+.information{
+    max-height: fit-content;
+    color: white;
+}
+.desc p{
+    font-weight: normal;
+    text-align: left;
+    justify-content: center;
+    font-size: 25px;
+    
+}
+.desc{
+    padding-left: 10%;
+    padding-top: 10%;
+}
+.icons{
+    
+    font-size: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20%;
+}
+
+.icons .iconIG:hover, .iconIN:hover {
+    color: #37ca0a;
+}

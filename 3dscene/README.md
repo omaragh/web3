@@ -1,0 +1,1 @@
+# dit is een 1ste versie met three.js, inladen van 3d model plain js

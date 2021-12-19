@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: goldenrod;
+}
+canvas{
+    display: block;
+}
+.myFile{
+    border: solid;
+    border-color: black;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+.myFile.active{
+    background:#daa580;
+}
+.myFile button{
+    font-size: 15px;
+    padding: 10px 25px;
+}

@@ -1,0 +1,13 @@
+body {
+  background-color: gray;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color:rgb(32, 36, 39);
+  overflow-x: hidden;
+}
+
+code, h1, p, h2 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: white;
+}

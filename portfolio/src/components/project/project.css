@@ -1,0 +1,54 @@
+.main-slide{
+  padding-top: 100px;
+  overflow:hidden;
+}
+
+.carousel .slider-wrapper{
+  width: 50%;
+  height: 75vh;
+}
+
+.carousel .thumb{
+  width: 5%;
+  height: 50px;
+}
+
+.carousel{
+  text-align: center;
+}
+
+.img1{
+  width: 40% !important;
+  height: 100% !important;
+}
+
+video{
+  width: 65% !important;
+  height: auto !important;
+}
+.carousel.carousel-slider .control-arrow{
+  background-color: #37ca0a !important;
+}
+h1, h2{
+  font-weight: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 0.05cm;
+}
+
+.overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #9ee788;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
