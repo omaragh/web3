@@ -1,14 +1,9 @@
-import './App.css';
-import Categories from './components/categories/categories';
 
-
+import Nav from './components/header/header';
 function App() {
   return (
     <div className="App">
-      <div>
-        <Categories/>
-      </div>
-      
+      <Nav/>
     </div>
   );
 }

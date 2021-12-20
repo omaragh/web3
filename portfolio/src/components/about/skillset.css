@@ -1,0 +1,57 @@
+
+.skillSet #imgs{
+    height: 50px;
+}
+.skillSet{
+    width: 30%;
+    margin-top: 2em;
+    height: 150px;
+}
+.skills{
+    width: 50%;
+    height: 70%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: rgba(255, 253, 253);;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+    border-radius: 25px;
+}
+#loader{
+    border-radius: 25px;
+    height: 10px;
+    background-color: #39beeb;
+}
+.uitleg{
+    width: 50%;
+    margin: auto;
+}
+@media only screen and (max-width: 1024px){
+    .skills{
+        width: 75%;
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 667px){
+    .uitleg{
+        font-size: 10px;
+       
+    }
+    .skills{
+        width: 70%;
+        font-size: 8px;  
+    }
+    
+    .skillSet{
+        width: 45%;
+        margin: 0 auto;
+        padding-left: 1em;
+    }
+    .skillSet #imgs{
+        height: 30px;
+    }
+}

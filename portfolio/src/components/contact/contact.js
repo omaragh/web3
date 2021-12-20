@@ -1,29 +1,30 @@
-import {FaInstagram, FaLinkedin, FaLongArrowAltLeft} from 'react-icons/fa';
-import styles from './contact.module.css';
+import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faInstagram, faLinkedinIn, faGithub} from '@fortawesome/free-brands-svg-icons';
+import './contact.css';
 
-function Contact(){
-    return (
-        
-        <div className={styles.information}>
-            {/* <div className={styles.icons}>
-                <FaLongArrowAltLeft className={styles.arrow}/>
-            </div> */}
-            
-            <div className={styles.desc}>
-                <p>If you liked what you've seen do not hesitate to reach out.</p>
-                <p>I look forward to brainstorm and create amazing projects with you!</p>
-                <p>Down below my socials!</p>
-            </div>
-            <div className={styles.icons}>
-                <div className={styles.iconIG}>
-                    <FaInstagram/>
+export default class ContactMe extends React.Component{
+    render(){
+        return(
+            <div className="form_container">
+                
+                <form className="form">
+                    <h3>Contact me</h3>
+                    <p>If you liked my work and are interested in my profile, do not hesitate to contact me below or by using my socials!</p>
+                    <label>Name</label>
+                    <input type="text" placeholder="name"/>
+                    <label>Mail</label>
+                    <input type="mail" placeholder="email@gmail.com"/>
+                    <label>Message</label>
+                    <textarea type="text"rows="5"></textarea>
+                    <button >Contact me</button>
+                 </form>
+                 <div className="contacts">
+                    <a href="https://github.com/omaragh/web3"><FontAwesomeIcon id="ig" icon={faGithub}/></a>
+                    <a href="https://www.instagram.com/omar.agh/"><FontAwesomeIcon id="ig" icon={faInstagram}/></a>
+                    <a href="https://www.linkedin.com/in/omar-aghallaj/"><FontAwesomeIcon id="ig" icon={faLinkedinIn}/></a>
                 </div>
-                <div className={styles.iconIN}>
-                    <FaLinkedin/>
-                </div>
             </div>
-        </div>
-    )
+        )
+    }
 }
-
-export default Contact;
